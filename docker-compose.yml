@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
       target: dev
-    image: sujan1921/demonode
+    image: sujan1921/demonode-dev
     ports:
       - 4500:5000
     restart: always
@@ -18,7 +18,7 @@ services:
       context: .
       dockerfile: Dockerfile
       target: prod
-    image: sujan1921/demonode
+    image: sujan1921/demonode-prod
     ports:
       - 5000:5000
     restart: always
